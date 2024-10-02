@@ -1,5 +1,5 @@
 # Portfolio_03_CaloriesTracker (React + TypeScript + Vite)
-Overview
+
 This project is a Calories Tracker web application built using React and Vite. It allows users to log their daily calorie intake, set goals, and track their progress over time, offering a clean and responsive user experience. The project demonstrates advanced React concepts like state management with hooks, form validation, local storage handling, and dynamic data rendering.
 
 Technologies Used:
