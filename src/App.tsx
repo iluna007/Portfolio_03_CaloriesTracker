@@ -2,6 +2,7 @@ import { useReducer, useEffect, useMemo } from "react"
 import Form from "./components/Form"
 import { activityReducer, initalSatate } from "./reducers/activity-reducer"
 import ActivityList from "./components/ActivityList"
+import CaloriesTracker from "./components/CaloriesTracker"
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
   return (
     <>
       <header className="bg-gray-600 py-3">
-        <div className="max-w-4xl mx-auto flex justify-between">
+        <div className="max-w-4xl mx-auto flex justify-between items-center">
           <h1 className="text-center text-lg font-bold text-white uppercase">
             Calories counter
           </h1>
@@ -37,6 +38,15 @@ function App() {
           />
         </div>
       </section>
+
+      <section className="bg-gray-800 py-10">
+        <div className="max-w-4xl mx-auto">
+          <CaloriesTracker
+            activities={state.activities}
+          />
+        </div>
+      </section>
+
       <section className="p-10 mx-auto max-w-4xl">
         <ActivityList 
           activities={state?.activities ?? []}
